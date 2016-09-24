@@ -14,7 +14,7 @@ class ReviewsController < ApplicationController
       if @review.save
         format.html { redirect_to place_path(@review.place), notice: 'Review was successfully created.' }
       else
-        format.html { render :new }
+        format.html { redirect_to root_path }
       end
     end
   end
@@ -48,6 +48,6 @@ class ReviewsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def review_params
-      params.require(:review).permit(:place_id, :content)
+      params.require(:review).permit(:place_id, :content, :score)
     end
 end

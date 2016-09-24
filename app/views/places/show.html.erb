@@ -23,8 +23,9 @@
 
   <div class="col-md-9">
     <h3>Reviews by People</h3>
-      <%= render 'reviews/form' %>
-      <%= render @reviews %>
+    <%= render 'reviews/form' %>
+    <h5>All reviews</h5>
+    <%= render @reviews %>
   </div>
 </div>
 
@@ -41,4 +42,12 @@
       map: map,
     });
   }
+  <% @reviews.each do |review| %>
+      $(".score_<%= review.id %> ").raty({
+      starOn: "<%= image_path('star-on.png') %>",
+      starOff: "<%= image_path('star-off.png') %>",
+      score: '<%= review.score %>',
+      readOnly: true
+    });
+  <% end %>
 </script>
