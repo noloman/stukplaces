@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
-  revision: 6ebc8c8575c88ba1f610f2d3c9bfca04de24fb55
+  revision: 8a64089bf4c07c457be40973f1c99923ca8a7ef9
   specs:
     twitter-bootstrap-rails (4.0.0)
       actionpack (>= 5.0, < 7.0)
@@ -125,7 +125,7 @@ GEM
     mimemagic (0.3.3)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
-    minitest (5.11.3)
+    minitest (5.12.0)
     multi_json (1.13.1)
     nio4r (2.5.1)
     nokogiri (1.10.4)
