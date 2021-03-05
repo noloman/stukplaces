@@ -91,7 +91,7 @@ GEM
     ffi (1.11.3)
     font-awesome-rails (4.7.0.5)
       railties (>= 3.2, < 6.1)
-    geocoder (1.6.3)
+    geocoder (1.6.6)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     gravatarify (3.1.1)
